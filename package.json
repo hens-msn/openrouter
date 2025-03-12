@@ -2,7 +2,7 @@
   "name": "@henotic/openrouter",
   "author": "Hens MSN <hendymms@engineer.com>",
   "license": "MIT",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "OpenRouter is a tool that allows you to use the OpenRouter API.",
   "module": "dist/index.js",
   "main": "dist/index.js",
