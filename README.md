@@ -4,10 +4,6 @@
 ### Instalasi Package
 ```bash
 bun add @henotic/openrouter
-atau
-npm install @henotic/openrouter
-atau
-yarn add @henotic/openrouter
 ```
 
 ### Setup Environment Variable
