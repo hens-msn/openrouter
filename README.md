@@ -134,7 +134,15 @@ try {
 } catch (error) {
     if (error instanceof Error) {
         console.error('Error:', error.message)
+        
         // Handle specific error cases
+        if (error.message.includes('API Key Invalid')) {
+            // Handle invalid API key
+        } else if (error.message.includes('Rate Limit Exceeded')) {
+            // Handle rate limit
+        } else {
+            // Handle generic error
+        }
     }
 }
 ```
@@ -182,6 +190,11 @@ const multiModalResponse = await ai.textResponse(
 3. **Temperature**: Sesuaikan temperature dengan use case
 4. **Web Search**: Gunakan web search untuk informasi terkini
 5. **History Management**: Manfaatkan chat history untuk percakapan kontekstual
+6. **Security Considerations**:
+   - Jangan pernah hardcode API key di source code
+   - Gunakan environment variable management yang aman
+   - Pertimbangkan untuk menggunakan secret management tools seperti Vault
+   - Batasi akses API key hanya ke environment yang diperlukan
 
 ## 8. 🚀 Performance Optimization
 - Gunakan `enableHistory: false` untuk percakapan satu kali
